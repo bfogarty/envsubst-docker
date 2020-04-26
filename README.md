@@ -6,8 +6,10 @@ This may be useful as an `initContainer` for a Kubernetes deployment, to inject 
 
 ## Usage
 
+The entrypoint of this image is `/bin/sh -c`.
+
 ```console
-$ docker run bfogarty/envsubst --help
+$ docker run bfogarty/envsubst "envsubst --help"
 
 Usage: envsubst [OPTION] [SHELL-FORMAT]
 
